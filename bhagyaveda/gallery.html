@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo Gallery | Bhagyaveda Naturals & Wellness</title>
+  <meta name="description" content="Photos of Bhagyaveda herbal wellness products and moments.">
+  <meta name="keywords" content="Bhagyaveda gallery, Ayurvedic products photos">
+  <meta name="author" content="Bhagyaveda Naturals & Wellness">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2e7d32">
+
+  <!-- Social sharing (Facebook, WhatsApp, LinkedIn previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhagyaveda Naturals & Wellness">
+  <meta property="og:title" content="Photo Gallery | Bhagyaveda Naturals & Wellness">
+  <meta property="og:description" content="Photos of Bhagyaveda herbal wellness products and moments.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Fonts (to change fonts, edit this link AND the --font-* variables in css/style.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header, menu, footer and floating buttons are built by js/main.js from js/config.js -->
+  <div id="site-topbar"></div>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Photo Gallery</h1>
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Gallery</li></ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Images listed here come from js/gallery-list.js, created by tools/build.py
+             from the files in the gallery/ folder. -->
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <noscript><p style="padding:1rem;text-align:center">Please enable JavaScript to see the full menu and product lists.</p></noscript>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/gallery-list.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
