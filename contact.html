@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Inquiry | Bhagyaveda Naturals & Wellness</title>
+  <meta name="description" content="Contact Bhagyaveda Naturals & Wellness, Solapur. Call or WhatsApp 9322654624 or send an inquiry about any product.">
+  <meta name="keywords" content="contact Bhagyaveda, Solapur, WhatsApp inquiry, Ayurvedic products enquiry">
+  <meta name="author" content="Bhagyaveda Naturals & Wellness">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2e7d32">
+
+  <!-- Social sharing (Facebook, WhatsApp, LinkedIn previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhagyaveda Naturals & Wellness">
+  <meta property="og:title" content="Contact & Inquiry | Bhagyaveda Naturals & Wellness">
+  <meta property="og:description" content="Contact Bhagyaveda Naturals & Wellness, Solapur. Call or WhatsApp 9322654624 or send an inquiry about any product.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Fonts (to change fonts, edit this link AND the --font-* variables in css/style.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header, menu, footer and floating buttons are built by js/main.js from js/config.js -->
+  <div id="site-topbar"></div>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- INQUIRY FORM: on submit, opens WhatsApp with the details pre-filled -->
+        <div class="card" id="inquiry">
+          <h2>Send an inquiry</h2>
+          <p>Fill in your details and press the button. WhatsApp opens with your message ready to send.</p>
+          <form id="inquiry-form" novalidate>
+            <div class="form-row">
+              <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-error">
+              <p class="error" id="f-name-error" role="alert"></p>
+            </div>
+            <div class="form-row">
+              <label for="f-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="f-phone-error">
+              <p class="error" id="f-phone-error" role="alert"></p>
+            </div>
+            <div class="form-row">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="f-email-error">
+              <p class="error" id="f-email-error" role="alert"></p>
+            </div>
+            <div class="form-row">
+              <label for="f-product">Product interest</label>
+              <select id="f-product" name="product"></select>
+            </div>
+            <div class="form-row">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="4"></textarea>
+            </div>
+            <button class="btn btn--whatsapp" type="submit">Send on WhatsApp</button>
+            <p class="form-note" id="form-status" role="status" aria-live="polite">Your details are sent through WhatsApp, not stored on this website.</p>
+          </form>
+        </div>
+
+        <!-- CONTACT DETAILS: values come from js/config.js -->
+        <aside>
+          <div class="card">
+            <h2>Contact details</h2>
+            <ul class="info-list" id="contact-info"></ul>
+            <div id="contact-social"></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container">
+        <div class="map" id="map-wrap"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <noscript><p style="padding:1rem;text-align:center">Please enable JavaScript to see the full menu and product lists.</p></noscript>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/gallery-list.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
